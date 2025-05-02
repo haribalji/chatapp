@@ -83,7 +83,7 @@ connectDB(process.env.MONGO_URI);
 // createSingleChats(10);
 // createGroupChats(10);
 // createMessagesInAChat("67fa5634f273da7482817ac1",50);
-const PORT =process.env.PORT||3000
+const PORT ="https://chatapp-kchw.onrender.com "||3000
 
 
 app.use(express.json());
