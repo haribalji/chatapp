@@ -71,18 +71,18 @@ const server = http.createServer(app); // ✅ Create HTTP server from express ap
 const io = new Server(server,
   {
    cors:
-  //      {
-  //   origin: [
-  //     "http://localhost:5173",
-  //     "http://localhost:4173",
-  //     // process.env.CLIENT_URL,
-  //     "https://chatapp-frontend-92xg.vercel.app"
-  //   ],
-  //   methods: ["GET", "POST", "PUT", "DELETE"],
-  //   credentials: true,
-  // }
+       {
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:4173",
+      // process.env.CLIENT_URL,
+      "https://chatapp-frontend-92xg.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }
        
-       corsOptions
+       // corsOptions
   }
 ); // ✅ Attach socket.io to the HTTP server
 
