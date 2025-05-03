@@ -46,7 +46,9 @@ const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
 app.use(cors(
   {
 
-origin:["http://localhost:5173","http://localhost:4173",process.env.CLIENT_URL
+origin:["http://localhost:5173","http://localhost:4173",
+        // process.env.CLIENT_URL
+       "https://chatapp-kchw.onrender.com";
 ]
 ,
 credentials:true
@@ -72,7 +74,8 @@ const io = new Server(server,
     origin: [
       "http://localhost:5173",
       "http://localhost:4173",
-      process.env.CLIENT_URL,
+      // process.env.CLIENT_URL,
+      "https://chatapp-kchw.onrender.com";
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
