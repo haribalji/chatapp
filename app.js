@@ -44,14 +44,14 @@ const app=express();
 const adminSecretKey = process.env.ADMIN_SECRET_KEY || "nvp";
 const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
 app.use(cors(
-//   {
+  {
 
-// origin:["http://localhost:5173","http://localhost:4173",process.env.CLIENT_URL
-// ]
-// ,
-// credentials:true
+origin:["http://localhost:5173","http://localhost:4173",process.env.CLIENT_URL
+]
+,
+credentials:true
 
-// }
+}
 
 corsOptions
 ));
