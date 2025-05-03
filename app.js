@@ -53,7 +53,7 @@ credentials:true
 
 }
 
-corsOptions
+// corsOptions
 ));
 
 const userSocketIDs = new Map();//here all the active user will be there
