@@ -44,18 +44,18 @@ const app=express();
 const adminSecretKey = process.env.ADMIN_SECRET_KEY || "nvp";
 const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
 app.use(cors(
-  {
+//   {
 
-origin:["http://localhost:5173","http://localhost:4173",
-        // process.env.CLIENT_URL
-       "https://chatapp-frontend-92xg.vercel.app"
-]
-,
-credentials:true
+// origin:["http://localhost:5173","http://localhost:4173",
+//         // process.env.CLIENT_URL
+//        "https://chatapp-frontend-92xg.vercel.app"
+// ]
+// ,
+// credentials:true
 
-}
+// }
 
-// corsOptions
+corsOptions
 ));
 
 const userSocketIDs = new Map();//here all the active user will be there
